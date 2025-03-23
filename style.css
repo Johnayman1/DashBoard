@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    color :white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover{
+    width: 260px;   
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+    gap: 40px;
+    transition: 0.5s;
+}
+ul li a:hover , .active ,.datainfo .box:hover , td:hover{
+    background-color: #ffffff55;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.logout a{
+    background-color: #aa0000c1;
+}
+ul li a i{
+    font-size: 30px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: white solid 3px;
+    flex-shrink: 0;
+}
+.img img{
+    width: 100%;
+    
+}
+.prof{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.prof p{
+    font-size: 30px;
+}
+.cont{
+    width: 100% ;
+    margin: 10px;
+}
+.info , .user{
+    background-color: #1172d3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    margin:5px;
+}
+.datainfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.datainfo .box{
+    background-color: #123;
+    flex-basis: 150px ;
+    height: 150px;
+    border-radius: 8px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.datainfo .box i{
+    font-size: 40px;
+}
+.datainfo .box .data{
+    align-items: center;
+}
+.datainfo .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+   
+}
+td,th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: #1172d3;
+}
+.r , .l{
+    padding: 6px;
+    border-radius: 8px;
+}
+.r{
+    background-color: #ffff00ab;
+}
+.l{
+    background-color: #acff2fae;
+}
